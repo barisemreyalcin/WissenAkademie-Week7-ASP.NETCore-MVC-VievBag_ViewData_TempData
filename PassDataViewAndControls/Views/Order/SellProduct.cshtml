@@ -1,0 +1,25 @@
+﻿@{
+	ViewData["Title"] = "Sell Product";
+}
+
+<h1 class="bg-success text-white">Sell Product</h1>
+<form asp-action="SellProduct" asp-controller="Order" method="post">
+	<div class="form-group">
+		<label>Product ID: </label>
+		<input type="text" name="ProductID" class="form-control" />
+	</div>
+
+	<div class="form-group">
+		<label>Product Name: </label>
+		<input type="text" name="ProductName" class="form-control" />
+	</div>
+
+	<div class="form-group">
+		<label>Product Price: </label>
+		<input type="text" name="ProductPrice" class="form-control" />
+	</div>
+
+	<div class="form-group">
+		<input type="submit" value="Sell" class="btn btn-outline-success" />
+	</div>
+</form>

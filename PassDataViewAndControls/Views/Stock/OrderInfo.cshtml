@@ -1,0 +1,28 @@
+﻿@{
+	ViewData["Title"] = "Stock/Order Info";
+}
+
+<div class="justify-content-center">
+	<div class="card">
+		<div class="card-header">
+			<p class="text-center">Sold Product Info</p>
+		</div>
+
+		<div class="card-body">
+			<dl>
+				<dt>Product ID: </dt>
+				<dd>@ViewBag.ProductID</dd>
+			</dl>
+
+			<dl>
+				<dt>Product Name: </dt>
+				<dd>@ViewBag.ProductName</dd>
+			</dl>
+
+			<dl>
+				<dt>Product Price: </dt>
+				<dd>@ViewBag.ProductPrice</dd>
+			</dl>
+		</div>
+	</div>
+</div>

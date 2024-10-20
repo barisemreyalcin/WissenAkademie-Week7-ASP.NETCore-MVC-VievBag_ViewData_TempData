@@ -1,0 +1,28 @@
+﻿@{
+	ViewData["Title"] = "Sample Controller Index2";
+}
+
+<h1>Sample ---> Index2</h1>
+<!--Index1'den aldım aşağı kısmı-->
+@* <div class="justify-content-lg-center">
+	<h1 class="btn btn-danger">@ViewBag.GetDate</h1>
+</div>
+<div class="justify-content-center">
+	<ul class="list-group">
+		@foreach (var name in ViewBag.Names)
+		{
+			<li class="list-item">
+				<a href="#" class="nav-item">@name</a>
+			</li>
+		}
+	</ul>
+</div> *@
+
+@* <div class="justify-content-center">
+	<span class="btn btn-outline-danger">@ViewData["Hour"]</span>
+</div> *@
+
+
+<div class="justify-content-center">
+	<span class="btn btn-outline-danger">@TempData["Day"]</span>
+</div>

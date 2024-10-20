@@ -1,0 +1,53 @@
+﻿@{
+	ViewData["Title"] = "Contact Form - Send a mail";
+}
+
+<h1 class="bg-info text-white justify-content-center">
+	Contact Form
+</h1>
+<div class="row">
+	<div class="col-sm-6">
+		<form asp-action="Index" asp-controller="Mail" method="post">
+			<h2 id="header">Fill the form to send mail...</h2>
+			<div id="mailTable">
+				<table class="table table-bordered tab-hover">
+					<tr>
+						<td>Email address</td>
+						<td><b> : </b></td>
+						<td>
+							<input type="text" name="txtEmail" class="form-control" />
+						</td>
+					</tr>
+
+					<tr>
+						<td>Subject</td>
+						<td><b> : </b></td>
+						<td>
+							<input type="text" name="txtSubject" class="form-control" />
+						</td>
+					</tr>
+					<tr>
+						<td>Message</td>
+						<td><b> : </b></td>
+						<td>
+							<textarea name="txtMessage" class="form-control" rows="15" cols="50" placeholder="Your message here..." ></textarea>
+						</td>
+					</tr>
+					
+					<tr class="text-center">
+						<td colspan="3">
+							<input type="submit" name="btnSubmit" value="Send mail" class="btn btn-primary" />
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+
+		<br />
+		<br />
+
+		<div class="row">
+			<div style="height: 200px;" class="col-lg-6 bg-danger text-white">@ViewBag.Result</div>
+		</div>
+	</div>
+</div>
